@@ -5,7 +5,7 @@ package com.prime.gc;
  */
 
 /*
- * c.f.
+ * see
  * https://stackoverflow.com/questions/9625663/calculating-and-printing-the-nth-
  * prime-number (further modifications can make the algorithm run much
  * faster--to find the hundred-millionth prime, the methods below might take
@@ -14,7 +14,7 @@ package com.prime.gc;
 public class PrimeNumber {
 
 	// Take userNum and retrieve prime number at that position in the sequence.
-	public int getPrimeNumber(int userNum) {
+	public static int getPrimeNumber(int userNum) {
 		int i;
 		int count;
 

@@ -11,7 +11,6 @@ public class PrimeNumbersApp {
 	public static void main(String[] args) {
 		Scanner scnr = new Scanner(System.in);
 		int userNum = 0;
-		PrimeNumber primeNum = new PrimeNumber();
 		String playAgain;
 
 		System.out.println(
@@ -20,7 +19,7 @@ public class PrimeNumbersApp {
 		do {
 			userNum = Validator.getInt(scnr, "Which prime number do you seek? ", 1, Integer.MAX_VALUE);
 
-			System.out.println("The number " + userNum + " prime is " + primeNum.getPrimeNumber(userNum) + ".");
+			System.out.println("The number " + userNum + " prime is " + PrimeNumber.getPrimeNumber(userNum) + ".");
 
 			playAgain = Validator.getString(scnr, "Do you want to find another prime number? (y/n): ");
 
